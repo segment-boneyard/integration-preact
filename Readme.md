@@ -1,8 +1,8 @@
-[![Build Status](https://circleci.com/gh/segmentio/integration-preact.png)](https://circleci.com/gh/segmentio/integration-preact)
+[![Build Status](https://circleci.com/gh/segmentio/integration-preact/tree/master.png?style=badge)](https://circleci.com/gh/segmentio/integration-preact/tree/master)
 
-# Preact server-side integration.
+# integration-preact
 
-Write me...
+Preact server-side integration for Segment.
 
 
 ## License
