@@ -1,0 +1,46 @@
+{
+  "input": {
+    "userId": "user-id",
+    "event": "___identify",
+    "timestamp": "2014-11-03T22:49:15.270Z",
+    "createdAt": "2014-11-03T22:49:15.270Z",
+    "type": "identify",
+    "source": "segmentio-server",
+    "traits": {
+      "username": "JohnDoe123",
+      "email": "john@doe.com",
+      "name": "John Doe",
+      "twitterId": "johnnyd",
+      "facebookId": "123456",
+      "stripeId": "jd1"
+    },
+    "context": {
+      "groupId": "account-id",
+      "ip": "10.0.0.1",
+      "library": {
+        "name": "unknown",
+        "version": "unknown"
+      }
+    }
+  },
+  "output": {
+    "person": {
+      "uid": "user-id",
+      "name": "John Doe",
+      "email": "john@doe.com",
+      "twitter_id": "johnnyd",
+      "facebook_id": "123456",
+      "stripe_id": "jd1",
+      "properties": {
+        "username": "JohnDoe123",
+        "twitterId": "johnnyd",
+        "facebookId": "123456",
+        "stripeId": "jd1"
+      }
+    },
+    "event": {
+      "name": "___identify"
+    },
+    "source": "segmentio-server"
+  }
+}
