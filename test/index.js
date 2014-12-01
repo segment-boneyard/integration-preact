@@ -1,6 +1,5 @@
 
 var Test = require('segmentio-integration-tester');
-var helpers = require('./helpers');
 var facade = require('segmentio-facade');
 var mapper = require('../lib/mapper');
 var time = require('unix-time');
@@ -66,8 +65,7 @@ describe('Preact', function(){
       var track = test.fixture('track-basic');
       test
         .set(settings)
-        .identify(track.input)
-        .request(1)
+        .track(track.input)
         .sends(track.output)
         .expects(200, done);
     });
