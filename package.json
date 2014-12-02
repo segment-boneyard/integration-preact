@@ -1,6 +1,6 @@
 {
   "name": "integration-preact",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "description": "Preact server-side integration",
   "author": "Segment <friends@segment.com>",
