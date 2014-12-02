@@ -16,7 +16,7 @@
     "extend": "^2.0.0",
     "obj-case": "^0.1.1",
     "reject": "0.0.1",
-    "segmentio-integration": "3.x",
+    "segmentio-integration": "^3.0.3",
     "unix-time": "^1.0.1",
     "is": "~0.2.6"
   },
