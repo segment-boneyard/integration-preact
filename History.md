@@ -1,4 +1,10 @@
 
+1.0.6 / 2014-12-08
+==================
+
+ * bump segmentio-integration
+ * clone object prior to delting properties in mapper
+
 1.0.5 / 2014-12-03
 ==================
 
