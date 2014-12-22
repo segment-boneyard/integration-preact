@@ -58,6 +58,21 @@ describe('Preact', function(){
         test.maps('track-basic');
       });
     });
+    describe('track', function(){
+      it('should map track with groupId', function(){
+        test.maps('track-groupid');
+      });
+    });
+    describe('track', function(){
+      it('should map track with account and groupId', function(){
+        test.maps('track-account-and-groupid');
+      });
+    });
+    describe('group', function(){
+      it('should map basic group', function(){
+        test.maps('group-basic');
+      });
+    });
   });
 
   describe('.track()', function(){
@@ -92,6 +107,24 @@ describe('Preact', function(){
       test
         .set({ apiSecret: 'x' })
         .identify({ userId: 'user-id' })
+        .error('cannot POST /api/v2/events (400)', done);
+    });
+  });
+
+  describe('.group()', function(){
+    it('should get a good response from the API', function(done){
+      var group = test.fixture('group-basic');
+      test
+        .group(group.input)
+        .sends(group.output)
+        .set(settings)
+        .expects(200, done);
+    });
+    
+    it('should error on invalid request', function(done){
+      test
+        .set({ apiSecret: 'x' })
+        .track({ event: 'event' })
         .error('cannot POST /api/v2/events (400)', done);
     });
   });

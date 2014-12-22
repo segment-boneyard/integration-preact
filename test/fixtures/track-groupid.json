@@ -6,11 +6,6 @@
     "timestamp": 1417420800,
     "properties": {
       "note": "some note",
-      "account": {
-        "id": "111",
-        "name": "Account 111",
-        "license_mrr": 10000
-      },
       "targetId": "target-id",
       "linkUrl": "link-url",
       "thumbUrl": "thumb-url",
@@ -21,6 +16,7 @@
       "random-property": "some-random-thing"
     },
     "context": {
+      "groupId": "111",
       "userAgent": "user-agent",
       "ip": "0.0.0.0",
       "traits": {
@@ -41,9 +37,7 @@
       "name": "my-event",
       "timestamp": 1417420800,
       "account": {
-        "id": "111",
-        "name": "Account 111",
-        "license_mrr": 10000
+        "id": "111"
       },
       "extras": {
         "_ua": "user-agent",

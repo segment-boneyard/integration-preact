@@ -21,6 +21,7 @@
       "random-property": "some-random-thing"
     },
     "context": {
+      "groupId": "some-other-account-id",
       "userAgent": "user-agent",
       "ip": "0.0.0.0",
       "traits": {
