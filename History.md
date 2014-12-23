@@ -1,4 +1,9 @@
 
+1.0.7 / 2014-12-23
+==================
+
+  * added support for group call, added additional mapping support for groupId on track calls
+
 1.0.6 / 2014-12-08
 ==================
 
