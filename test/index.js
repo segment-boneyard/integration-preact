@@ -85,11 +85,11 @@ describe('Preact', function(){
         .expects(200, done);
     });
 
-    it('should error on invalid request', function(done){
+    it('should not error on invalid request', function(done){
       test
         .set({ apiSecret: 'x' })
         .track({ event: 'event' })
-        .error('cannot POST /api/v2/events (400)', done);
+        .expects(200, done);
     });
   });
 
@@ -103,11 +103,11 @@ describe('Preact', function(){
         .expects(200, done);
     });
 
-    it('should error on invalid request', function(done){
+    it('should not error on invalid request', function(done){
       test
         .set({ apiSecret: 'x' })
         .identify({ userId: 'user-id' })
-        .error('cannot POST /api/v2/events (400)', done);
+        .expects(200, done);
     });
   });
 
@@ -120,12 +120,12 @@ describe('Preact', function(){
         .set(settings)
         .expects(200, done);
     });
-    
-    it('should error on invalid request', function(done){
+
+    it('should not error on invalid request', function(done){
       test
         .set({ apiSecret: 'x' })
         .track({ event: 'event' })
-        .error('cannot POST /api/v2/events (400)', done);
+        .expects(200, done);
     });
   });
 });
