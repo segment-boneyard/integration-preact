@@ -100,7 +100,10 @@ describe('Preact', function(){
         .set(settings)
         .identify(identify.input)
         .sends(identify.output)
-        .expects(200, done);
+        .expects(200, function(err, res){
+          if (err && res) err.message = err.message + ' ' + res.text;
+          done(err);
+        });
     });
 
     it('should not error on invalid request', function(done){
