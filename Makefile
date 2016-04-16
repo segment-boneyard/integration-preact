@@ -10,7 +10,7 @@ node_modules: package.json
 
 test:
 	@TZ=UTC ./node_modules/.bin/mocha $(TESTS) \
-		--timeout 20000 \
+		--timeout 20s \
 		--require should \
 		--reporter spec \
 		--inline-diffs \
@@ -26,7 +26,7 @@ test-cov:
 			--ui exports
 
 test-style:
-	@node_modules/.bin/jscs lib test
+	@node_modules/.bin/eslint lib test
 
 clean:
 	rm -rf coverage node_modules *.log
